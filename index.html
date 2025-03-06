@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content Access</title>
+    <!-- Link to Google Fonts Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        /* General settings */
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            line-height: 1.6;
+            position: relative;
+            overflow: hidden; /* Prevent interaction with the background */
+        }
+
+        /* Set the background image */
+        body::before {
+            content: '';
+            background: url('https://play-lh.googleusercontent.com/IlnBc1ca_20U3qacgXrkXM_opQK9gvTXryaPSCCPCanD_o_hPdgPQkhQ6-DcsfSZ9PU9') no-repeat center center fixed;
+            background-size: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: -1; /* Make sure the background stays behind the content */
+            pointer-events: none; /* Disable interaction with the background */
+            opacity: 0.7; /* Darken the image */
+        }
+
+        /* Overlay for darkening */
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+            z-index: -1;
+        }
+
+        /* Container setup */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 50px 20px;
+        }
+
+        /* Header style */
+        h1 {
+            font-size: 32px;
+            margin-bottom: 30px;
+            font-weight: 500;
+            color: #fff;
+        }
+
+        /* Button style */
+        .button {
+            background-color: #00aaff;
+            color: white;
+            font-size: 20px;
+            font-weight: 500;
+            padding: 18px 40px;
+            text-decoration: none;
+            border-radius: 30px;
+            display: inline-block;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+            margin-bottom: 30px;
+        }
+
+        /* Hover effect for the button */
+        .button:hover {
+            background-color: #0088cc;
+            transform: translateY(-4px);
+        }
+
+        /* Menu of content links */
+        .menu {
+            margin-top: 40px;
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .menu li {
+            margin: 15px 0;
+        }
+
+        .menu a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 12px 30px;
+            border-radius: 30px;
+            background-color: rgba(255, 255, 255, 0.1);
+            display: inline-block;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .menu a:hover {
+            background-color: #00aaff;
+            color: #121212;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 26px;
+                margin-bottom: 20px;
+            }
+
+            /* Button for mobile */
+            .button {
+                width: 90%;
+                padding: 15px;
+                font-size: 18px;
+                margin-bottom: 20px;
+            }
+
+            /* Menu links for mobile */
+            .menu a {
+                width: 90%;
+                text-align: center;
+                padding: 15px;
+                font-size: 16px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 24px;
+                margin-bottom: 15px;
+            }
+
+            /* Button for small screens */
+            .button {
+                width: 90%;
+                padding: 15px;
+                font-size: 16px;
+                margin-bottom: 15px;
+            }
+
+            .menu a {
+                width: 90%;
+                font-size: 14px;
+                padding: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay"></div> <!-- Dark overlay added here -->
+    <div class="container">
+        <!-- Header -->
+        <h1>Click the button below to access the content on Telegram</h1>
+        
+        <!-- Button to Telegram -->
+        <a href="https://t.me/OMELEAKS2025" class="button">Access Telegram</a>
+
+        <!-- Content menu -->
+        <div>
+            <ul class="menu">
+                <li><a href="https://t.me/OMELEAKS2025">OMEGLE PACKS</a></li>
+                <li><a href="https://t.me/OMELEAKS2025">MONKEYAPP PACKS</a></li>
+                <li><a href="https://t.me/OMELEAKS2025">DARKZADIE PACKS</a></li>
+                <li><a href="https://t.me/OMELEAKS2025">SNAPGOD PACKS</a></li>
+                <li><a href="https://t.me/OMELEAKS2025">EMMI SELLERS</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
